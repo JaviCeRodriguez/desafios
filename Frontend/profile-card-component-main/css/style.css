@@ -1,0 +1,20 @@
+.imgProfile {
+    left: 5.8rem;
+}
+
+.location {
+    color: #acadaf;
+}
+
+.stadText {
+    color: #929399;
+}
+
+.stadNumber,
+.name {
+    color: #383a49;
+}
+
+.stadInfo {
+    border-top: 0.05rem solid #929399;
+}

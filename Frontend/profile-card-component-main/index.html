@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <!-- Tailwind CSS CDN -->
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Frontend Mentor | Profile card component</title>
+    </head>
+    <body
+        class="flex justify-center items-center w-screen h-screen bg-blue-400"
+    >
+        <!-- Card -->
+        <div
+            class="flex flex-col justify-between w-72 h-80 rounded-xl bg-white"
+        >
+            <!-- Top Card-->
+            <figure class="relative h-2/5 rounded-t-xl">
+                <img
+                    class="imgProfile absolute z-10 top-20 rounded-full border-4 border-white"
+                    src="./images/image-victor.jpg"
+                    alt="image-victor"
+                />
+                <img
+                    class="absolute z-0 rounded-t-xl w-full"
+                    src="./images/bg-pattern-card.svg"
+                    alt="bg-pattern-card"
+                />
+            </figure>
+            <!-- Bottom Card-->
+            <div class="h-3/5 rounded-b-xl">
+                <!-- Personal Info -->
+                <div
+                    class="flex flex-col justify-end items-center pb-2 h-3/5 text-center"
+                >
+                    <div class="flex justify-evenly w-36">
+                        <h4 class="name font-bold">Victor Crest</h4>
+                        <label class="font-bold">26</label>
+                    </div>
+                    <label class="location text-sm font-semibold">London</label>
+                </div>
+                <!-- Stadistics -->
+                <div
+                    class="border-t border-gray-200 flex justify-evenly items-center h-2/5 text-center"
+                >
+                    <div class="leading-5 h-10">
+                        <h4 class="stadNumber font-bold">80K</h4>
+                        <label class="stadText text-xs">Followers</label>
+                    </div>
+                    <div class="stadNumber leading-5 h-10">
+                        <h4 class="font-bold">803K</h4>
+                        <label class="stadText text-xs">Likes</label>
+                    </div>
+                    <div class="stadNumber leading-5 h-10">
+                        <h4 class="font-bold">1.4K</h4>
+                        <label class="stadText text-xs">Photos</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
