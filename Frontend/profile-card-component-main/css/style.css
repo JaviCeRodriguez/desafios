@@ -1,3 +1,8 @@
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: hsl(185, 75%, 39%);
+}
+
 .imgProfile {
     left: 5.8rem;
 }
@@ -7,12 +12,16 @@
 }
 
 .stadText {
-    color: #929399;
+    color: hsl(0, 0%, 59%);
+}
+
+.age {
+    color: hsl(227, 10%, 46%);
 }
 
 .stadNumber,
 .name {
-    color: #383a49;
+    color: hsl(229, 23%, 23%);
 }
 
 .stadInfo {
