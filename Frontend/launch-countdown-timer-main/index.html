@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Launch countdown timer</title>
+    </head>
+    <body>
+        <main>
+            <img class="stars" src="./images/bg-stars.svg" />
+            <img class="hills" src="./images/pattern-hills.svg" />
+            <section id="setupCountdown" class="setupCountdown">
+                <h3>Countdown</h3>
+                <form onsubmit="return false">
+                    <div>
+                        <label>Inserte días</label>
+                        <input type="number" name="daysInput" id="daysInput" />
+                    </div>
+                    <div>
+                        <label>Inserte horas</label>
+                        <input
+                            type="number"
+                            name="hoursInput"
+                            id="hoursInput"
+                        />
+                    </div>
+                    <div>
+                        <label>Inserte minutos</label>
+                        <input
+                            type="number"
+                            name="minutesInput"
+                            id="minutesInput"
+                        />
+                    </div>
+                    <div>
+                        <label>Inserte segundos</label>
+                        <input
+                            type="number"
+                            name="secondsInput"
+                            id="secondsInput"
+                        />
+                    </div>
+                    <button onclick="validateTime()">Aplicar cambios</button>
+                </form>
+            </section>
+            <section id="timer" class="timer">
+                <h2>WE'RE LAUNCHING SOON</h2>
+                <div class="countdown">
+                    <div class="container">
+                        <label id="labelDay">-</label>
+                        <div class="flipTop"></div>
+                        <div class="flipBottom"></div>
+                        <!-- <div class="shadowDiv"></div> -->
+                        <p id="textDay">DAYS</p>
+                    </div>
+                    <div class="container">
+                        <label id="labelHour">-</label>
+                        <div class="flipTop"></div>
+                        <div class="flipBottom"></div>
+                        <!-- <div class="shadowDiv"></div> -->
+                        <p id="textHour">HOURS</p>
+                    </div>
+                    <div class="container">
+                        <label id="labelMinute">-</label>
+                        <div class="flipTop"></div>
+                        <div class="flipBottom"></div>
+                        <!-- <div class="shadowDiv"></div> -->
+                        <p id="textMinute">MINUTES</p>
+                    </div>
+                    <div class="container">
+                        <label id="labelSecond">-</label>
+                        <div class="flipTop"></div>
+                        <div class="flipBottom"></div>
+                        <!-- <div class="shadowDiv"></div> -->
+                        <p id="textSecond">SECONDS</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="./js/countdown.js"></script>
+    </body>
+</html>
